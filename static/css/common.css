@@ -1,0 +1,108 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+	padding: 60px 15px 0;
+}
+.container .text-muted {
+	margin: 20px 0;
+}
+
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+code {
+	font-size: 80%;
+}
+
+a.no-color {
+	color: inherit;
+}
+
+@media screen and (min-width: 1150px) {
+	.wrap-outer {
+		margin-left: calc(100vw - 100%);
+	}
+}
+::-webkit-scrollbar {
+	height:8px;
+	width:8px;
+}
+::-webkit-scrollbar:hover {
+	height:11px;
+	width:11px;
+}
+::-webkit-scrollbar-button {
+	height:0;
+	width:0;
+}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+	display:block;
+}
+::-webkit-scrollbar-button:vertical:start:increment,::-webkit-scrollbar-button:vertical:end:decrement {
+	display:none;
+}
+::-webkit-scrollbar-track:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal,::-webkit-scrollbar-track:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal {
+	border-style:solid;
+	border-color:transparent;
+}
+::-webkit-scrollbar-track:vertical::-webkit-scrollbar-track:horizontal{
+	background-clip:padding-box;
+	background-color:#fff;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	background-clip:padding-box;
+	background-color:rgba(0,0,0,.2);
+	min-height:28px;
+	padding-top:100px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+	-webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0,.25);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,.25);
+	background-color:rgba(0,0,0,.4);
+}
+::-webkit-scrollbar-thumb:active {
+	-webkit-box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,.35);
+	background-color:rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal {
+	border-width:0;
+}
+::-webkit-scrollbar-track:hover {
+	-webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.1);
+	box-shadow: inset 1px 0 0 rgba(0,0,0,.1);
+	background-color:rgba(0,0,0,.05);
+}
+::-webkit-scrollbar-track:active {
+	-webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.14),inset -1px -1px 0 rgba(0,0,0,.07);
+	box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px -1px 0 rgba(0,0,0,.07);
+	background-color:rgba(0,0,0,.05);
+}

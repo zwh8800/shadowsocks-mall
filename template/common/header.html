@@ -1,0 +1,24 @@
+{{ define "header" }}
+<div class="header">
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{{ .site.BaseUrl }}">{{ .site.Name }}</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li {{ if .currentPage.InIndex }}class="active"{{ end }}><a href="{{ .site.BaseUrl }}">首页</a></li>
+					<li {{ if .currentPage.InConsole }}class="active"{{ end }}><a href="{{ .site.BaseUrl }}console/index">控制台</a></li>
+					<li {{ if .currentPage.InIssue }}class="active"{{ end }}><a href="{{ .site.BaseUrl }}issue/new">提交工单</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><p class="navbar-text">{{ .haha }}</p></li>
+					<li><a href="{{ .site.BaseUrl }}login">登录</a></li>
+					<li><a href="{{ .site.BaseUrl }}register">注册</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</div>
+{{ end }}
